@@ -5,6 +5,8 @@ import RouteLayout from "./shared/RouteLayout";
 import { TopMenu } from "./components";
 import {
   Home,
+  Login,
+  SignUp,
 } from './pages'
 import React from 'react';
 
@@ -22,8 +24,8 @@ function App() {
             <Route path="/" element={<Home />} />
             {/* <Route path="/board" element={<PrayBoard />} /> */}
           </Route>
-          {/* <Route path="/login" element={<Login />} />
-          <Route path="/signup" element={<SignUp />} /> */}
+          <Route path="/login" element={<Login />} />
+          <Route path="/signup" element={<SignUp />} />
         </Route>
       </Routes >
     </AppWrap >
