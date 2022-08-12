@@ -7,6 +7,7 @@ import {
   Home,
   Login,
   SignUp,
+  PrayBoard, CreatePray, ReadPray,
 } from './pages'
 import React from 'react';
 
@@ -22,7 +23,9 @@ function App() {
         <Route element={<RouteLayout />}>
           <Route element={<TopMenu />}>
             <Route path="/" element={<Home />} />
-            {/* <Route path="/board" element={<PrayBoard />} /> */}
+            <Route path="/prayBoard" element={<PrayBoard />} />
+            <Route path="/createPray" element={<CreatePray />} />
+            <Route path="/readPray" element={<ReadPray />} />
           </Route>
           <Route path="/login" element={<Login />} />
           <Route path="/signup" element={<SignUp />} />
@@ -35,5 +38,6 @@ function App() {
 const AppWrap = styled.div`
   padding-bottom: 80px;
 `;
+
 
 export default App;
