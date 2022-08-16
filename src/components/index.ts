@@ -12,5 +12,4 @@ export {
   Poster,
   HallOfFame,
   Notice
-  
 };
