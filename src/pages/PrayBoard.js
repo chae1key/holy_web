@@ -1,6 +1,10 @@
 import React from 'react';
 import { useNavigate } from 'react-router-dom';
+import styled from 'styled-components';
 import { Button } from '../elements';
+import { Table } from '../elements';
+import { article_info } from './pray_data/article_info.js';
+
 
 const PrayBoard = () => {
     const navigate = useNavigate();
@@ -10,22 +14,27 @@ const PrayBoard = () => {
     }
 
     return (
-        <div>
+        <BoardWrap>
+            <Table data={article_info}></Table>
             <Button
                 _onClick={() => {
                     clickTab('/createPray')
                 }}
-                _borderRadius = '20px'
-                _width='150px'
-                _height='50px'
-                _fontSize='var(--font-lg-small)'
-                _hvBgc='none'
-                _hvColor='#666'
+                _margin='20px'
+                _width='10%'
+                
             >
                 기도 작성하기
             </Button>
-        </div>
+            
+        </BoardWrap>
     )
 }
+
+const BoardWrap = styled.div`
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+`
 
 export default PrayBoard;

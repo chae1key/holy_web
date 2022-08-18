@@ -2,6 +2,7 @@ import React from 'react';
 import { Outlet, useNavigate } from 'react-router-dom';
 import styled from 'styled-components';
 import { Button } from '../../elements';
+import logo_img from '../../logo.png';
 
 const TopMenu: React.FC = () => {
 
@@ -16,7 +17,10 @@ const TopMenu: React.FC = () => {
             <MenuWrap>
                 <MenuLogo onClick={() => {
                     clickTab('/');
-                }}>Holy Boom *</MenuLogo>
+                }}><img 
+                    src={logo_img}
+                    width='230px'
+                    /></MenuLogo>
                 <div>
                     <Button
                         _margin="0px 12px"

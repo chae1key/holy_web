@@ -2,22 +2,30 @@ import React from 'react';
 import styled from 'styled-components';
 import { Button } from '../elements';
 
+
 function CreatePray() {
     return (
         <ArticleWrap>
             <h3>매일 주님께 기도합시다</h3>
             
-            <ArticleForm action="/dd" method="post">
+            <ArticleForm 
+                onSubmit={function(e) {
+                    e.preventDefault();
+                }} 
+                action="http://localhost:8080" method="post">
                 <InputTitle name="prayTitle" placeholder="기도 제목을 입력하세요."></InputTitle>
                 
                     <InputContext name="prayContext"></InputContext>
                 
                 {/* <input type="submit"></input> */}
-                <Button>작성완료</Button>
+                <Button type="submit">작성완료</Button>
             </ArticleForm>
             
         </ArticleWrap>
     )
+}
+const submitForm = (event) => {
+    event.preventDefault();
 }
 const ArticleWrap = styled.div`
     display: flex;
