@@ -73,8 +73,7 @@ const LoginBox: React.FC = () => {
 
 const TopWrap = styled.div`
     padding-top : 30px;
-    height : 175px;
-    width : 400px;
+    width : 30%;
     border : solid  #e2e2e2 1px;
     border-radius : 10px;
 `;
