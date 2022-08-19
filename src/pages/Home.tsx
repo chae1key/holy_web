@@ -15,8 +15,8 @@ const Home: React.FC = () => {
                 <LoginBox />
             </TopWrap>
             <MiddleWrap>
-                <HallOfFame />
                 <Notice />
+                <HallOfFame />
             </MiddleWrap>
         </div>
     )
