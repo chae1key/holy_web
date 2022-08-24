@@ -7,7 +7,8 @@ import {
   Home,
   Login,
   SignUp,
-  PrayBoard, CreatePray, ReadPray,
+  PrayBoard, CreatePray, 
+  ReadBible,
 } from './pages'
 import React from 'react';
 
@@ -25,7 +26,7 @@ function App() {
             <Route path="/" element={<Home />} />
             <Route path="/prayBoard" element={<PrayBoard />} />
             <Route path="/createPray" element={<CreatePray />} />
-            <Route path="/readPray" element={<ReadPray />} />
+            <Route path="/readBible" element={<ReadBible />} />
           </Route>
           <Route path="/login" element={<Login />} />
           <Route path="/signup" element={<SignUp />} />

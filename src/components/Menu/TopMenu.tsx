@@ -49,7 +49,7 @@ const TopMenu: React.FC = () => {
                     </Button>
                     <Button
                         _onClick={() => {
-                            clickTab(`/shopping`)
+                            clickTab(`/readBible`)
                         }}
                         _fontSize='var(--font-lg-small)'
                         _bgc="#fff"
@@ -57,7 +57,7 @@ const TopMenu: React.FC = () => {
                         _hvBgc='none'
                         _hvColor='#666'
                     >
-                        굿즈 구매
+                        성경 읽기
                     </Button>
                 </div>
             </MenuWrap>

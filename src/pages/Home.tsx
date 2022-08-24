@@ -1,6 +1,6 @@
 import React, { useEffect } from 'react';
 import styled from 'styled-components';
-import { LoginBox, Poster, HallOfFame, Notice } from '../components';
+import { LoginBox, Poster, HallOfFame, Search } from '../components';
 
 
 const sampleCont = "그런즉 믿음, 소망, 사랑. 그 중에 제일은 사랑이라"
@@ -15,7 +15,7 @@ const Home: React.FC = () => {
                 <LoginBox />
             </TopWrap>
             <MiddleWrap>
-                <Notice />
+                <Search />
                 <HallOfFame />
             </MiddleWrap>
         </div>
