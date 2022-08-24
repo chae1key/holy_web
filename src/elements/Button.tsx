@@ -3,6 +3,7 @@ import styled from 'styled-components';
 
 interface ButtonProps extends ElButtonProps {
   children?: JSX.Element[] | string | JSX.Element | number;
+  id?: string;
   _onClick?: () => any;
 }
 
@@ -31,6 +32,7 @@ type ElButtonProps = {
 
 const Button: React.FC<ButtonProps> = ({
   children,
+  id,
   _onClick,
   _margin,
   _padding,
@@ -78,7 +80,7 @@ const Button: React.FC<ButtonProps> = ({
 
   return (
     <>
-      <ElButton {...styles} onClick={_onClick}>
+      <ElButton {...styles} id={id} onClick={_onClick}>
         {children}
       </ElButton>
     </>
