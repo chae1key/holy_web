@@ -4,10 +4,14 @@ import Home from "./Home";
 import PrayBoard from "./PrayBoard";  
 import CreatePray from "./CreatePray";
 import ReadPray from "./ReadPray";
+import TongdokPage from "./TongdokPage";
 
 export { 
   SignUp, 
   Login,
   Home,
+
   PrayBoard, CreatePray, ReadPray,
+  TongdokPage,
 }; 
+
