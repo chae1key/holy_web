@@ -37,18 +37,6 @@ const TopMenu: React.FC = () => {
                     </Button>
                     <Button
                         _onClick={() => {
-                            clickTab(`/reading`)
-                        }}
-                        _fontSize='var(--font-lg-small)'
-                        _bgc="#fff"
-                        _color='var(--color-main)'
-                        _hvBgc='none'
-                        _hvColor='#666'
-                    >
-                        성경 읽기
-                    </Button>
-                    <Button
-                        _onClick={() => {
                             clickTab(`/tongdok`)
                         }}
                         _fontSize='var(--font-lg-small)'
@@ -58,6 +46,20 @@ const TopMenu: React.FC = () => {
                         _hvColor='#666'
                     >
                         성경 통독
+                    </Button>
+<<<<<<< HEAD
+=======
+                    <Button
+                        _onClick={() => {
+                            clickTab(`/readBible`)
+                        }}
+                        _fontSize='var(--font-lg-small)'
+                        _bgc="#fff"
+                        _color='var(--color-main)'
+                        _hvBgc='none'
+                        _hvColor='#666'
+                    >
+                        성경 읽기
                     </Button>
                 </div>
             </MenuWrap>
