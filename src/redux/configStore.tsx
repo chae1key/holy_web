@@ -1,3 +1,4 @@
+import bible from "./modules/bible"
 import {
   createStore,
   combineReducers,
@@ -11,7 +12,7 @@ import logger from 'redux-logger'
 
 const middlewares = [thunk];
 
-const rootReducer = combineReducers({ }); //user
+const rootReducer = combineReducers({ bible }); //user
 
 const enhancer = applyMiddleware(...middlewares, logger);
 
