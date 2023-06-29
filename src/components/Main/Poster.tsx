@@ -21,7 +21,7 @@ const Poster: React.FC<PosterProps> = ({ todaysWordCont, todaysWordFrom }) => {
 }
 
 const TopWrap = styled.div`
-    width : 800px;
+    width : 70%;
     border : solid #e2e2e2 1px;
     border-radius : 10px;
     justify-content : center;
